@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <title>发起者</title>
+    <link rel="stylesheet" href="css/public.css"/>
+    <link rel="stylesheet" href="css/sponsor1.css"/>
+    <script src="js/width.js"></script>
+    <script type="text/javascript">
+        tools.setFontSize(18);
+        window.onload=function(){
+            window.onresize=function(){
+                tools.setFontSize(18);
+            }
+        }
+    </script>
+</head>
+<body>
+<nav>
+    <ul class="clearlr">
+        <li>返回</li>
+        <li>教师节快乐</li>
+        <li></li>
+    </ul>
+</nav>
+<section class="clearlr">
+    <div class="language clearlr">
+        <p>发起玫瑰征集，一人一支</p>
+        <p>聚成一束，送到老师手中</p>
+    </div>
+    <div>
+        <img src="images/flowers1.png" alt=""/>
+    </div>
+    <div class="content">
+        <p>玫瑰由花店商城提供并进行配送</p>
+        <span>9.9元/支</span>
+        <div class="set-time">
+            设置征集截止时间：
+            <select id="data">
+                <option value="1">1小时</option>
+                <option value="2">2小时</option>
+                <option value="3">3小时</option>
+                <option value="4">4小时</option>
+                <option value="5">5小时</option>
+                <option value="6" selected >6小时</option>
+                <option value="7">7小时</option>
+                <option value="8">8小时</option>
+                <option value="9">9小时</option>
+                <option value="10">10小时</option>
+                <option value="11">11小时</option>
+                <option value="12">12小时</option>
+            </select>
+        </div>
+        <div class="annotation">(注：征集截止后，记得去个人中心把祝福推送给敬爱的老师哦，若您未按时发起祝福，三个工作日后系统会自动发起退款。)</div>
+        <button id="addAddress">添加地址</button>
+    </div>
+    <div class="pay">
+        <p>（最低起送数量10支，若送花人数超过10人，免邮；若不足10人，你还需承担12元的快递费用）</p>
+        <button>发起并支付</button>
+    </div>
+</section>
+<div id="address">
+    <span>×</span>
+
+    <form action="">
+        <div>
+            <label for="recipients">
+                收件人：
+                <input  id="recipients" name="recipients" type="text" value=""/>
+            </label>
+
+        </div>
+        <div>
+            <label for="tel">
+                联系电话：
+                <input  id="tel" name="tel" type="tel" value=""/>
+            </label>
+
+        </div>
+        <div class="shippingAddress">
+            <label>
+                收货地址：
+                <div>
+                    <select id="s_province" name="s_province"></select>  
+
+                    <select id="s_city" name="s_city" ></select>  
+
+                    <select id="s_county" name="s_county"></select>
+                    <script class="resources library" src="js/area.js" type="text/javascript"></script>
+                    <script type="text/javascript">_init_area();</script>
+                </div>
+
+
+            </label>
+
+        </div>
+        <div>
+            <label >
+                详细地址：
+                <textarea style="resize: none;" name="detailedAddress" id="detailedAddress"  ></textarea>
+            </label>
+
+        </div>
+        <button>添加地址</button>
+    </form>
+
+</div>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript">
+        $(" #addAddress").click(function(e){
+            e.preventDefault();
+            $(" #address").show();
+        })
+
+    var Gid  = document.getElementById ;
+
+    var showArea = function(){
+
+        Gid('show').innerHTML = "<h3>省" + Gid('s_province').value + " - 市" +
+
+        Gid('s_city').value + " - 县/区" +
+
+        Gid('s_county').value + "</h3>"
+
+    }
+
+    Gid('s_county').setAttribute('onchange','showArea()');
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,161 @@
+section{
+    background: url("../images/bg.png") no-repeat center top;
+    background-size: cover;
+    height: 100%;
+    color: #fff;
+}
+.language{
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.language p{
+    margin: 5px auto;
+    font-size: 1rem;
+}
+.content{
+    width: 90%;
+    margin: 0 auto;
+}
+.content p{
+    font-size: .6rem;
+    margin: 5px 0;
+}
+
+.content .set-time{
+    width: 80%;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 10px;
+    color: #fff;
+    background-color: transparent;
+    margin: 10px 0;
+    font-size: .84rem;
+}
+#data{
+    background-color: transparent;
+    color: #fff;
+
+}
+#data:focus{
+    border: 1px solid #fff;
+
+}
+#data:active{
+    border: 1px solid #fff;
+
+}
+#data:focus{
+    border: 1px solid #fff;
+
+}
+#data option{
+    background-color: #353e43;
+    color: #fff;
+}
+.content .annotation{
+    font-size: .4rem;
+    margin: 5px 0;
+}
+#addAddress{
+
+    background-color: transparent;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    padding: 5px;
+    color: #fff;
+    margin: 10px 0;
+}
+.pay{
+    width: 90%;
+    margin: 40px auto;
+}
+.pay p{
+    font-size: .6rem;
+    /*transform: scale(.6);*/
+    /*-moz-transform: scale(.6);*/
+    /*-webkit-transform: scale(.6);*/
+    margin: 5px 0;
+}
+.pay button{
+    width: 50%;
+    text-align: center;
+    padding: 10px;
+    background-color:#4cda64 ;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+}
+#address{
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 5px;
+    width: 13rem;
+    font-family: "Tahoma";
+    /*margin: 0 auto;*/
+
+}
+#address span{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+#address div{
+    border: 1px solid #000;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 10px 0;
+    color: #000;
+    font-size: .8rem;
+}
+#address div label{
+   vertical-align: middle;
+    display: inline-block;
+}
+#address div input{
+    vertical-align: middle;
+    background-color: #f2f2f2;
+    width: 85px;
+}
+#address #detailedAddress{
+    margin: 0 auto;
+    background-color: #f2f2f2;
+    border: none;
+    width: 100%;
+}
+#address button{
+    border: 1px solid #000;
+    padding: 5px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+}
+#address select{
+    background-image: url("../images/arrow3.jpg");
+    border: 1px solid #000;
+    /*transform: scale(.6);*/
+    /*-moz-transform: scale(.6);*/
+    /*-webkit-transform: scale(.6);*/
+}
+#address .shippingAddress div{
+    border: none;
+    margin: 0 ;
+    padding: 0;
+}

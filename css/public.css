@@ -40,8 +40,21 @@ input{
     outline:none;
     border:none;
 }
+select {
+    border: solid 1px #fff;
+
+    appearance:none;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    padding: 3px;
+    padding-right:17px;
+    font-size: .4rem;
+    background: url("../images/arrow.jpg") no-repeat scroll right center transparent;
+
+}
 
 
+select::-ms-expand { display: none; }
 
 nav{
     height:2.8rem;
